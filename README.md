@@ -1,4 +1,4 @@
-![logo](https://github.com/Hemant-1Kumar/Hemant-1Kumar/blob/main/op.png)
+![logo](https://github.com/Hemant-1Kumar/Hemant-1Kumar/blob/main/op2.png)
 <h1 align="center">Hi 👋, I'm Hemant Kumar</h1>
 <h3 align="center">A passionate Data Scientist Enthusiastic from India</h3>
 
