@@ -1,4 +1,3 @@
-
 <h1 align="center">Hi 👋, I'm Hemant Kumar</h1>
 <h3 align="center">A passionate Data Scientist Enthusiastic from India</h3>
 
