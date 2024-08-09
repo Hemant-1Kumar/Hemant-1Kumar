@@ -2,7 +2,7 @@
 
 <h1 align="center">Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>, My Name is Hemant Kumar </h1>
 
-<h2 align="center">Data Science | Data Analytics | Machine Learning</h2>
+<h2 align="center">Looking for an opportunity as Data Scientist | Experienced Intern | Machine Learning | Artificial Intelligence | Deep Learning | Natural Language Processing | Python</h2>
 
 </br>
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=Hemant-1Kumar&label=Profile%20views&color=0e75b6&style=flat" alt="Hemant-1Kumar" /> </p>
