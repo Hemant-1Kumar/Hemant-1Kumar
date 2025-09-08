@@ -1,0 +1,104 @@
+<!-- Banner by Hemant Kumar — Full-Stack Developer -->
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hemant Kumar — Full-Stack Developer">
+  <defs>
+    <!-- Animated gradient background -->
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#6EE7F9">
+        <animate attributeName="stop-color" values="#6EE7F9;#A78BFA;#F472B6;#6EE7F9" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%"  stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#F472B6;#6EE7F9;#A78BFA" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#F472B6">
+        <animate attributeName="stop-color" values="#F472B6;#6EE7F9;#A78BFA;#F472B6" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Subtle grain -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.05"/>
+      </feComponentTransfer>
+      <feBlend mode="overlay"/>
+    </filter>
+
+    <!-- Neon glow for text -->
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" in="SourceGraphic" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Typing mask -->
+    <mask id="typeMask">
+      <rect x="0" y="0" width="0" height="300" fill="#fff">
+        <animate attributeName="width" values="0;1200" dur="4s" keyTimes="0;1" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Blink cursor -->
+    <style>
+      .blink { animation: blink 0.9s steps(1,end) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      /* Optional: nicer on light/dark GitHub themes */
+      @media (prefers-color-scheme: light) {
+        .title { fill: #0b1220; }
+        .tag   { fill: #172554; }
+      }
+      @media (prefers-color-scheme: dark) {
+        .title { fill: #E5E7EB; }
+        .tag   { fill: #BFDBFE; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#g)"/>
+  <rect width="1200" height="300" filter="url(#grain)" opacity="0.25"/>
+
+  <!-- Accent waves -->
+  <path d="M0,240 C200,180 400,300 600,230 C800,160 1000,260 1200,200 L1200,300 L0,300 Z" fill="rgba(255,255,255,0.12)"/>
+  <path d="M0,200 C220,130 420,260 620,190 C840,120 1020,240 1200,160 L1200,300 L0,300 Z" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- Main text: typed reveal -->
+  <g filter="url(#neon)">
+    <g mask="url(#typeMask)">
+      <text x="80" y="140" class="title" font-family="Poppins, Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="64" font-weight="800" letter-spacing="1">
+        HEMANT KUMAR
+      </text>
+    </g>
+    <!-- Cursor -->
+    <rect x="80" y="95" width="6" height="58" class="blink" rx="2" ry="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="80" y="195" class="tag" font-family="Inter, Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="26" font-weight="600">
+    Full-Stack Developer • React • Node • Express • MongoDB • MySQL
+  </text>
+
+  <!-- Social chips -->
+  <g font-family="Inter, Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">
+    <!-- GitHub -->
+    <a href="https://github.com/Hemant-1Kumar" target="_blank">
+      <rect x="80" y="220" rx="14" ry="14" width="135" height="36" fill="rgba(0,0,0,0.25)"/>
+      <text x="98" y="244" fill="#fff">GitHub</text>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/hemant-kumar-a06679263/" target="_blank">
+      <rect x="225" y="220" rx="14" ry="14" width="145" height="36" fill="rgba(0,0,0,0.25)"/>
+      <text x="245" y="244" fill="#fff">LinkedIn</text>
+    </a>
+    <!-- Email -->
+    <a href="mailto:hemantkumarr831@gmail.com">
+      <rect x="380" y="220" rx="14" ry="14" width="280" height="36" fill="rgba(0,0,0,0.25)"/>
+      <text x="400" y="244" fill="#fff">hemantkumarr831@gmail.com</text>
+    </a>
+  </g>
+</svg>
